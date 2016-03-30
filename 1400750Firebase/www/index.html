@@ -14,9 +14,10 @@
 <body ng-app="starter" ng-controller="ListCtrl">
 
     <ion-header-bar class="bar-dark">
-        <h1 class="title">Items list</h1>
-        <button class="button button-icon ion-plus" ng-click="addItem"()></button>
+        <h1 class="title">Uudet itemssit</h1>
+        <button class="button button-icon ion-plus" ng-click="addItem()"></button>
     </ion-header-bar>
+    
     <ion-content>
         <ion-list>
             <ion-item ng-repeat="item in items" ng-class="{purchased: item.status === 'purchased'}">

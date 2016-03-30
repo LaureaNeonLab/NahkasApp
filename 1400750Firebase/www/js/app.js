@@ -14,9 +14,9 @@ angular.module('starter', ['ionic'])
         }
     }
     
-    $scope.purchasedItem = function (item) {
+    $scope.purchaseItem = function (item) {
         $scope.item = item;
-        $scope.item ['status'] = 'purcahsed';
+        $scope.item ['status'] = 'purchased';
         $ionicListDelegate.closeOptionButton();
     };
     
