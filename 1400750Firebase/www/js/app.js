@@ -1,0 +1,24 @@
+
+angular.module('starter', ['ionic'])
+
+.controller('ListCtrl', function($scope, $ionicListDelegate){
+    
+    $scope.items = [];
+    
+    $scope.addItem = function () {
+        var name = prompt('What would you like to add?');
+        if (name) {
+            $scope.item.push({
+                'name': name
+            });
+        }
+    }
+    
+    $scope.purchasedItem = function (item) {
+        $scope.item = item;
+        $scope.item ['status'] = 'purcahsed';
+        $ionicListDelegate.closeOptionButton();
+    };
+    
+    
+});
